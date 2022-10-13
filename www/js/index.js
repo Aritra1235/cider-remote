@@ -9,7 +9,7 @@ function onDeviceReady() {
 	var ip;
 	
 	function askIP() {
-		ip = prompt('Please enter the IP address of PCs');
+		ip = prompt('Enter the IP address of PC');
 		url = 'http://' + ip + ':6942'
 	}
 
