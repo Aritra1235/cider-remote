@@ -1,10 +1,19 @@
 
 document.addEventListener('deviceready', onDeviceReady, false);
 
+
+
 function onDeviceReady() {
 	
 	var url;
-	url = "http://192.168.1.8:6942";
+	var ip;
+	
+	function askIP() {
+		ip = prompt('Please enter the IP address of PCs');
+		url = 'http://' + ip + ':6942'
+	}
+
+	askIP();
 	
 	showHelp(url);
 
